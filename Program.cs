@@ -7,14 +7,20 @@ namespace XOR
       string key = "it works!"
         
       // Encrypt_1 & Decrypt_1 
-      Console.WriteLine( "\"" +word +"\"" +" encrypted: " + EncryptionDecryption.Encrypt_1(word, key) + "\n");   // Logs: "2c1a435|162|1f1a4e7|5454121c6|"
+        
+      Console.WriteLine( "\"" +word +"\"" +" encrypted: " + EncryptionDecryption.Encrypt_1(word, key) + "\n");
+      // Logs: "2c1a435|162|1f1a4e7|5454121c6|"
+      
       Console.WriteLine(EncryptionDecryption.Encrypt(word, key) +" decrypted: " + "\"" + EncryptionDecryption.Decrypt_1(EncryptionDecryption.Encrypt_1(word, key), key)+"\"");
       // Logs: "Encryption test"
       
       /*--------------------------------------------------------------------------------------------------*/
       
       // Encrypt_2 & Decrypt_2
-      Console.WriteLine( "\"" +word +"\"" +" encrypted: " + EncryptionDecryption.Encrypt_2(word, key) + "\n");                    // Logs: "e:GVQXTA;:TEWT"
+      
+      Console.WriteLine( "\"" +word +"\"" +" encrypted: " + EncryptionDecryption.Encrypt_2(word, key) + "\n");
+      // Logs: "e:GVQXTA;:TEWT"
+      
       Console.WriteLine(EncryptionDecryption.Encrypt(word, key) +" decrypted: " + "\"" + EncryptionDecryption.Decrypt_2(EncryptionDecryption.Encrypt_2(word, key), key)+"\"");
       // Logs: "Encryption test"
       
