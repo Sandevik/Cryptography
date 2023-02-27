@@ -2,6 +2,9 @@ namespace XOR
 {
   public class EncryptionDecryption
   {
+    
+    /* -----------------First Technique------------------------ */
+    
     public static string Encrypt_1(string word, string key){
             // Returs encrypted string
             int[] resultChars = new int[word.Length];
@@ -84,6 +87,10 @@ namespace XOR
             }
             return result;
         }
+    
+    
+    
+    /*-----------------Second Technique-----------------------*/
     
     public static string Encrypt_2(string word, string key){
             // Returs encrypted string
