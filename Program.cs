@@ -24,6 +24,19 @@ namespace XOR
       Console.WriteLine(EncryptionDecryption.Encrypt(word, key) +" decrypted: " + "\"" + EncryptionDecryption.Decrypt_2(EncryptionDecryption.Encrypt_2(word, key), key)+"\"");
       // Logs: "Encryption test"
       
+      /*---------------------------------------------------------------------------------------------------*/
+      
+      // Encryption with both 
+      
+       string encrypted = EncryptionDecryption.Encrypt_2(EncryptionDecryption.Encrypt_1(word, key), key);
+       string decrypted = EncryptionDecryption.Decrypt_1(EncryptionDecryption.Decrypt_2(encrypted, key), key);
+      
+       Console.WriteLine( "\"" +word +"\"" +" encrypted: " + encrypted + "\n");
+       // Logs: "GILLBIELGL"
+      
+       Console.WriteLine(encrypted +" decrypted: " + "\"" + decrypted +"\n");
+       // Logs: "Encryption test"
+      
       
     }
   }
