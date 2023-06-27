@@ -1,6 +1,6 @@
 namespace XOR
 {
-  public class EncryptionDecryption
+  public class Cryptography
   {
     
     /* -----------------First Technique------------------------ */
